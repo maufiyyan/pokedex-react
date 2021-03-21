@@ -9,8 +9,8 @@ class Link extends Component {
     return (
    		<Switch>
 			<Route exact path="/" component={PokemonList} />
-			<Route path="/my-pokemon" component={MyPokemon} />
-			<Route path="/detail/:id/:name" component={Detail} />
+			<Route exact path="/my-pokemon" component={MyPokemon} />
+			<Route exact path="/detail/:id/:name" component={Detail} />
 		</Switch>
     );
   }
