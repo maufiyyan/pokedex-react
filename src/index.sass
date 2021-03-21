@@ -1,0 +1,105 @@
+body 
+  max-width: 444px
+  overflow-x: hidden
+  margin: auto
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+
+.p-0 
+  padding: 0 !important
+
+.text-center
+  text-align: center
+
+.text-left
+  text-align: left
+
+.progress
+  padding: 15px 0px
+
+.full-img
+  width: 100%
+  object-fit: cover
+
+.header
+  position: fixed
+  background: red
+  font-size: 18px
+  color: white
+  font-weight: bold
+  z-index: 3
+  height: 60px
+  overflow: hidden
+  text-transform: capitalize
+  .MuiIconButton-label
+    color: white
+
+.content 
+  padding: 60px 0px
+  overflow: hidden
+  overflow-y: scroll
+  scrollbar-width: none
+  -ms-overflow-style: none
+  .lazy-load-image-background
+    min-height: 199px
+    background-size: auto 100% !important
+    background-position: center
+    background-repeat: no-repeat
+    &.lazy-load-image-loaded
+      min-height: 0
+  &::-webkit-scrollbar
+    width: 0
+    background: transparent
+  &-details
+    .lazy-load-image-background
+      padding-bottom: 100%
+      &.lazy-load-image-loaded
+        padding-bottom: 0
+  p
+    padding-left: 15px
+    font-size: 18px
+    text-transform: capitalize
+
+.wrapper-button-bottom
+  height: 60px
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  a
+    text-decoration: none
+  button
+    height: 100%
+    background: red
+    color: white
+    border-radius: 0
+    font-weight: bold
+    &:hover
+      background: red
+      color: white
+      border-radius: 0
+      font-weight: bold
+
+.ability
+  .Mui-expanded
+    margin: 0 !important
+  .MuiAccordionSummary-root
+    background: #ccc
+
+.modal
+  display: flex
+  justify-content: center
+  align-items: center
+  &-body
+    background: white
+    padding: 20px 15px
+    h3
+      margin-top: 0
+    button
+      margin-top: 30px
+      background: red
+      color: white
+      &:hover
+        background: red
